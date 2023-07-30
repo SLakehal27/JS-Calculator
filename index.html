@@ -4,16 +4,44 @@
         <title>Calculator</title>
         <link rel = "stylesheet" href = "styles.css">
         <link rel = "icon" href="./images/calculator.png">
+        <script src = "calculator.js" defer></script>
     </head>
     <body>
         <div class="calcheader">
         </div>
         <div class="calcarea">
             <div class="calcbox">
-                <div class="calcscreen"></div>
+                <div class="calcscreen">
+                    <p class = "calctxt">0</p>
+                    <p class="calcrestxt"><b></b></p>
+                </div>
                 <div class="calcfirstmenu">
-                    <button class = "clearbtn">CLEAR</button>
+                    <button class = "clearbtn" onclick="display('0')">CLEAR</button>
                     <button class= "delbtn">DELETE</button>
+                </div>
+                <div class = "calcsecondmenu">
+                    <button class = "calcbtn" onclick="display('7')">7</button>
+                    <button class = "calcbtn" onclick="display('8')">8</button>
+                    <button class = "calcbtn" onclick="display('9')">9</button>
+                    <button class = "calcbtn" onclick="setOperator('÷')">÷</button>
+                </div>
+                <div class = "calcsecondmenu">
+                    <button class = "calcbtn" onclick="display('4')">4</button>
+                    <button class = "calcbtn" onclick="display('5')">5</button>
+                    <button class = "calcbtn" onclick="display('6')">6</button>
+                    <button class = "calcbtn" onclick="setOperator('×')">×</button>
+                </div>
+                <div class = "calcsecondmenu">
+                    <button class = "calcbtn" onclick="display('1')">1</button>
+                    <button class = "calcbtn" onclick="display('2')">2</button>
+                    <button class = "calcbtn" onclick="display('3')">3</button>
+                    <button class = "calcbtn" onclick="setOperator('-')">−</button>
+                </div>
+                <div class = "calcsecondmenu">
+                    <button class = "calcbtn" onclick="display('0')">0</button>
+                    <button class = "calcbtn">.</button>
+                    <button class = "calcbtn">=</button>
+                    <button class = "calcbtn" onclick="setOperator('+')">+</button>
                 </div>
             </div>
         </div>
