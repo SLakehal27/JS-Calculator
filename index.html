@@ -4,7 +4,7 @@
         <title>Calculator</title>
         <link rel = "stylesheet" href = "styles.css">
         <link rel = "icon" href="./images/calculator.png">
-        <script src = "calculator.js" defer></script>
+        
     </head>
     <body>
         <div class="calcheader">
@@ -16,8 +16,8 @@
                     <p class="calcrestxt"><b></b></p>
                 </div>
                 <div class="calcfirstmenu">
-                    <button class = "clearbtn" onclick="display('0')">CLEAR</button>
-                    <button class= "delbtn">DELETE</button>
+                    <button class = "clearbtn" onclick= "clearDisplay()">CLEAR</button>
+                    <button class= "delbtn"   onclick="deleteDisplay()">DELETE</button>
                 </div>
                 <div class = "calcsecondmenu">
                     <button class = "calcbtn" onclick="display('7')">7</button>
@@ -38,13 +38,14 @@
                     <button class = "calcbtn" onclick="setOperator('-')">−</button>
                 </div>
                 <div class = "calcsecondmenu">
+                    <button class = "calcbtn"> </button>
                     <button class = "calcbtn" onclick="display('0')">0</button>
-                    <button class = "calcbtn">.</button>
-                    <button class = "calcbtn">=</button>
+                    <button class = "calcbtn" onclick = "operate()">=</button>
                     <button class = "calcbtn" onclick="setOperator('+')">+</button>
                 </div>
             </div>
         </div>
+        <script src = "calculator.js" defer></script>
         <!-- <p>Copyright 2023 SLakehal27</p> -->
     </body>
 </html>

@@ -22,12 +22,14 @@ body{
 .calcbox .calcscreen{
     width: 280px;
     height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
     background: #15788c;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 10px 20px;
 }
+
 .calcfirstmenu{
     display: flex;
     justify-content: center;
@@ -84,12 +86,12 @@ body{
     color:#f0f3c0;
     font-size: 36px;
     text-align: end;
-    margin: 0 20px 40px 0;
+    margin: 0 20px 0 0; 
 }
 
 .calcrestxt{
-    color:#f0f3c0;
+    color:white;
     font-size: 36px;
     text-align: end;
-    margin: 0px 20px 0 0;
+    margin: 0 20px 0 0;
 }
